@@ -3,105 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1: Creating a Personal Portfolio Page</title>
+    <title>Project 2: Building a Simple Blog Layout</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<style>
+
+    <style>
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8; /* Light background for the entire page */
 }
-    .name{
-        background-color: #f4f4f4;;
-        height: 500px;
-        width: 100%;
-        text-align: center;
-    
-    }
+.banner{
+    background-color: rgb(24, 11, 36);
+    height: 500px;
+    width: 100%;
+    text-align:center ;
+    color: white;
 
-    .icon {
+}
+
+
+
+.icon {
     height: 138px;
     width: 135px;
     margin: 10px auto;
-    background: brown;
+    background: rgb(6, 2, 63);
     border-radius: 100px;
+  
+    
 }
+
 
 .icon i {
     padding: 46px;
     font-size: 50px;
-}
-.self {
-    margin: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    background: #f4f4f4;
-    height: 200px;
-    padding: 30px;
+
+
 }
 
 
-.work {
-    background: #f4f4f4;
+.banner nav ul li{
+    list-style: none;
+    margin: 0 15px;
+    display: inline;
+   
+}
+
+
+
+.main {
+    background-color: antiquewhite;
     height: 600px;
-    width: 100%;
-    margin: 20px;
-   
+    
+  
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 29px;
+    margin: 47px;
 }
 
-.project1 {
-    background: beige;
-    border: 2px solid;
-    height: 230px;
-    width: 20%;
-    margin: 12px;
-      display: inline-block; /* Aligns the containers side by side */
-      line-height: 200px; /* Vertically centers the text */
-text-align: center;
-   
+.title{
+    height: 300px;
+    border-bottom: 2px solid;
+    margin: 10px;
+    padding: 10px;
 }
 
-.contact{
-    margin: 20px;
-    font-size: 20px;
-    cursor: pointer;
-    background: #f4f4f4;
-    height: 100px;
-    padding: 30px;
+
+.blogs{
+    height: 300px;
+    
+    margin: 10px;
+    padding: 10px;
 }
-</style>
+
+
+.title p{
+    line-height: 20px;
+}
+
+.title h2{
+   margin-bottom: 10px;
+}
+
+
+.blogs p{
+    line-height: 20px;
+}
+
+.blogs h2{
+   margin-bottom: 10px;
+}
+
+.footer{
+    background-color: violet;
+    height: 200px;
+    color: white;
+    text-align: center;
+   padding: 10px;
+}
+
+
+
+    </style>
 </head>
 <body>
-    <div class="name">
+    <div class="banner">
         <div class="icon">
-            <i class="fa-solid fa-user"></i>
-        </div>
-        <h1>HEMA SONI</h1>
-        <p>FRONT END DEVELOPER | TECH ETHUSIASTIC</p>
+    
+        <i class="fa-solid fa-user"></i>
     </div>
-    <div class="self">
-        ABOUT ME
-        <br>
-        <br>
-        [my biography]
+        <h1>MY BLOG</h1>
+        <nav>
+        <ul>
+            <li>
+                Home
+            </li>
+            <li>
+                About
+            </li>
+            <li>
+                Contact
+            </li>
+        </ul>
+    </nav>
+   
+</div>
+
+<div class="main">
+
+    <div class="title">
+        <h2>Blog post title</h2>
+        <p>Content of the first blog post.</p>
     </div>
 
-    <div class="work">
-<div class="project1">
-    project1
-</div>
-<div class="project1">
-    project1
-</div>
-<div class="project1">
-    project1
-</div>
-    </div>
-    <div class="contact">
-        CONTACT ME
-        <br>
-        <br>
-        [at your email]
+
+    <div class="blogs">
+        <h2>Another Blog post title</h2>
+        <p>Content of the second blog post.</p>
     </div>
 
+</div>
+
+<div class="footer">
+<p>© 2023 My Simple Blog</p>
+</div>
 </body>
 </html>
